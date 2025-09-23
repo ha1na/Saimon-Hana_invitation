@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Wedding Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hana & Simon's Wedding</h1>
+        <p>We can't wait to celebrate with you!</p>
+    </header>
+
+    <section>
+        <h2>Countdown to the Big Day</h2>
+        <div class="countdown" id="countdown"></div>
+    </section>
+
+    <section>
+        <h2>Venue</h2>
+        <p>29 River Terrace, Kangaroo Point, QLD</p>
+        <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_LINK_HERE" height="300" loading="lazy"></iframe>
+    </section>
+
+    <section>
+        <h2>Our Story</h2>
+        <img src="your-photo.jpg" alt="Our Photo">
+        <p>Write a short message or love story here ♥</p>
+    </section>
+
+    <section class="rsvp">
+        <h2>RSVP</h2>
+        <iframe src="YOUR_GOOGLE_FORM_LINK_HERE" height="400"></iframe>
+    </section>
+
+    <footer style="margin: 30px 0; font-size: 0.8em;">
+        <p>Made with ♥ by Hana</p>
+    </footer>
+
+    <script>
+    const weddingDate = new Date("2025-12-20T15:00:00").getTime();
+    const timer = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = weddingDate - now;
+        if (distance < 0) {
+            document.getElementById("countdown").innerHTML = "It's Wedding Day!";
+            clearInterval(timer);
+        } else {
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            document.getElementById("countdown").innerHTML = 
+                days + " days " + hours + " hours " + minutes + " mins";
+        }
+    }, 1000);
+    </script>
+</body>
+</html>

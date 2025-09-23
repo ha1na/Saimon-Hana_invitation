@@ -1,0 +1,42 @@
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #fff8f0;
+    color: #333;
+}
+header {
+    padding: 20px;
+    background-color: #f4e2d8;
+}
+h1 {
+    margin: 0;
+    font-size: 2em;
+}
+.countdown {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+iframe {
+    width: 90%;
+    max-width: 500px;
+    border: none;
+    border-radius: 8px;
+}
+section {
+    margin: 20px 0;
+    padding: 10px;
+}
+img {
+    max-width: 90%;
+    border-radius: 8px;
+}
+.rsvp {
+    margin-top: 30px;
+}
+@media (max-width: 600px) {
+    h1 { font-size: 1.6em; }
+    .countdown { font-size: 1.2em; }
+}
