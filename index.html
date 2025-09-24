@@ -5,74 +5,200 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Wedding Invitation</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Archivo+Black&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
+    <!-- 🎀 배경 이미지 -->
     <div class="bg-box">
-        <img src="image/top_bow01.png" class="bg-img">
+        <img src="image/top_bow01.png" class="bg-img" alt="bow">
     </div>
+
+    <!-- 🏠 헤더 -->
     <header>
-         
-            
-            <h1 class="Point">Saimon + Hana</h1>
-            <h3>= Endless Happiness!!</h3>
-            <div class="img-container">
-                <img class="main_baby" src="image/main_baby_lightpink.PNG" alt="childhood">
-            </div>
-        </div>      
+        <h1 class="Point">Saimon + Hana</h1>
+        <h3>= Endless Happiness!!</h3>
+        <div class="img-container">
+            <img class="main_baby" src="image/main_baby_lightpink.PNG" alt="childhood">
+        </div>
         <h1>27.10.2025</h1>
+        <p>LOVE STORY, GLOBAL EDITION</p>
     </header>
 
+    
+    <!-- 📅 Save the date -->
     <section>
-        <h2>SAVE THE DATE</h2>
-        <p>
+        <h2>OUR LOVE DATE</h2>
+        <p>Circle the Date <br>Join Our FOREVER</p>
 
-        </p>
+        <section class="calendar">
+            <h2>October 2025</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+                <tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr>
+                <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
+                <tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+                <tr><td>26</td><td class="theday">27 ❤️</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <p>Monday, 14:15PM <br>27th of October, 2025</p>
+
         <h3>Countdown to the Big Day</h3>
         <div class="countdown" id="countdown"></div>
     </section>
 
-    <section>
-        <h2>Venue</h2>
-        <p>29 River Terrace, Kangaroo Point, QLD</p>
-        <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_LINK_HERE" height="300" loading="lazy"></iframe>
-    </section>
 
+    <!-- 💌 Our Story -->
     <section>
         <h2>Our Story</h2>
         <img src="your-photo.jpg" alt="Our Photo">
         <p>Write a short message or love story here ♥</p>
     </section>
 
-    <section class="rsvp">
-        <h2>RSVP</h2>
-        <iframe src="YOUR_GOOGLE_FORM_LINK_HERE" height="400"></iframe>
+
+
+
+    <!-- 📷 사진 -->
+    <section>
+        <img class="fourcut" src="image/fourcut.png" alt="couple picture">
     </section>
 
+    <!-- 📍 Our Little Promise Spot -->
+    <section>
+        <h2>CEREMONY</h2>
+        <h3>Our Little Promise Spot</h3>
+        <p>Where Love Becomes Official</p>
+        <img class="img-middle img-drawing" src="image/drawing_ring.png">
+
+        <!-- 지도 iframe -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.070918713982!2d153.0220729394325!3d-27.46705141669112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a053ef3ef4b%3A0x3aa467841696a98!2sRegistry%20of%20Births%2C%20Deaths%20%26%20Marriages!5e0!3m2!1sko!2sau!4v1758724358457!5m2!1sko!2sau&hl=en" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+         <!-- 클릭 가능한 주소 -->
+        <p style="margin-top:10px; font-size:18px;">
+        <a href="https://www.google.com/maps/place/Registry+of+Births,+Deaths+%26+Marriages,+Brisbane/@-27.4670514,153.0220729,17z" target="_blank" style="text-decoration:none; color:#d14747; font-weight:bold;">
+            Brisbane Registry <br>
+            Level 32, 180 Ann St, Brisbane City QLD
+        </a>
+        <br><p class="ex02">By invitaion only</p>
+    </p>
+    </section>
+
+    <!-- 💌 Our Big day plan  -->
+    <section class="our-big-day">
+        <img class="img-middle img-drawing" src="image/drawing_champaign.png">
+        <h2>OUR BIG DAY PLAN</h2>
+        <div class="schedule-item plan-one">
+            <div class="schedule-text">
+                <h3>14:30</h3>
+                <p>OUR LOVE <BR>CEREMONY</p>
+                <p class="ex01">REGISTRY BRISBANE</p>  
+            </div>
+            <div class="schedule-img">
+                <img src="image/drawing_ring.png">
+            </div>    
+        </div>
+        <div class="schedule-item plan-two">
+            <div class="schedule-img">
+                <img src="image/drawing_camera.png">
+            </div>
+            <div class="schedule-text">
+                <h3>15:30</h3>
+                <p>STRIKE A POSE</p>
+                <p class="ex01">SOUTH BANK PARK</p>
+            </div>
+        </div>
+        <div class="schedule-item plan-three">
+            <div class="schedule-text point-eat">
+                <h3>17:00</h3>
+                <p>EAT, LAUGH, LOVE</p>
+                <p class="ex01">Ahmet's Turkish Restaurant</p>
+                <p class="ex02">SHOP 10/168 GREY ST, <Br> SOUTHBANK</p>  
+            </div>
+            <div class="schedule-img">
+                <img src="image/drawing_champaign.png">
+            </div> 
+        </div>
+        <div class="schedule-item plan-four">
+            <div class="schedule-img">
+                <img src="image/drawing_cake.png">
+            </div>
+            <div class="schedule-text">
+                <h3>20:00</h3>
+                <p>SWEET BITES <BR>& SMILES</p>
+                <p class="ex01">Our first sweet bite <Br>together as Mr & Mrs</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- 📍 EAT, LAUGH, LOVE -->
+    <section>
+        <h2>EAT, LAUGH, LOVE</h2>
+        <h3>Our Little Promise Spot</h3>
+        <p>Where Love Becomes Official</p>
+        <img class="img-middle img-drawing" src="image/drawing_ring.png">
+
+        <!-- 지도 iframe -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.070918713982!2d153.0220729394325!3d-27.46705141669112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a053ef3ef4b%3A0x3aa467841696a98!2sRegistry%20of%20Births%2C%20Deaths%20%26%20Marriages!5e0!3m2!1sko!2sau!4v1758724358457!5m2!1sko!2sau&hl=en" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+         <!-- 클릭 가능한 주소 -->
+        <p style="margin-top:10px; font-size:18px;">
+        <a href="https://www.google.com/maps/place/Registry+of+Births,+Deaths+%26+Marriages,+Brisbane/@-27.4670514,153.0220729,17z" target="_blank" style="text-decoration:none; color:#d14747; font-weight:bold;">
+            Ahmet's Turkish Restaurant
+            <BR>SHOP 10/168 GREY ST, SOUTHBANK, BRISBANE
+        </a>
+    </p>
+    </section>
+
+
+     <!-- 💌 PHOTOSHOOT -->
+    <section>
+        <h2>Our Story</h2>
+        <img src="your-photo.jpg" alt="Our Photo">
+        <p>Write a short message or love story here ♥</p>
+    </section>
+
+
+    <!-- 📝 RSVP -->
+    <section class="rsvp">
+        <h2>RSVP</h2>
+        <iframe src="YOUR_GOOGLE_FORM_LINK_HERE" height="400" style="border:0; width:90%; border-radius:8px;"></iframe>
+    </section>
+
+    <!-- ❤️ 푸터 -->
     <footer style="margin: 30px 0; font-size: 0.8em;">
         <p>Made with ♥ by Hana</p>
     </footer>
 
+    <!-- ⏳ Countdown Script -->
     <script>
-    const weddingDate = new Date("2025-10-27T14:15:00").getTime();
-    const timer = setInterval(function() {
-        const now = new Date().getTime();
-        const distance = weddingDate - now;
-        if (distance < 0) {
-            document.getElementById("countdown").innerHTML = "It's Wedding Day!";
-            clearInterval(timer);
-        } else {
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            document.getElementById("countdown").innerHTML = 
-                days + " days " + hours + " hours " + minutes + " mins";
-        }
-    }, 1000);
+        const weddingDate = new Date("2025-10-27T14:15:00").getTime();
+        const timer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+            if (distance < 0) {
+                document.getElementById("countdown").innerHTML = "It's Wedding Day!";
+                clearInterval(timer);
+            } else {
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                document.getElementById("countdown").innerHTML = 
+                    days + " days " + hours + " hours " + minutes + " mins";
+            }
+        }, 1000);
     </script>
 </body>
 </html>
