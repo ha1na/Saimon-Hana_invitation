@@ -5,31 +5,81 @@
   font-weight: 400;
   font-style: normal;
 }
+.abril-fatface-regular {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.alfa-slab-one-regular {
+  /*-제일 볼드*/
+  font-family: "Alfa Slab One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1.Point { font-family: "Alfa Slab One", serif;}
 
 
+img {margin:10px;}
 
 
 
 
 
 body {
-    font-family: "Archivo Black", sans-serif;
+    font-family: "Abril Fatface", sans-serif;
     text-align: center;
-    margin: 0;
-    padding: 0;
-    background-color: #fffbec;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    background-color: #fffaecef;
     color: #333;
 }
+
+
+/*첫번째 페이지******************************************************/
 header {
-    padding: 20px;
-    background-color: #f4e2d8;
+    padding-top: 95px;
+    padding-bottom: 30px;
+    background-color: #fffaecef; }
+
+.main_baby {margin-left:5px; margin:0 auto; display:block; }
+.bg-box {
+  position: relative;
+  /*height: 400px;*/
 }
+
+.bg-img {
+  position: absolute;
+  scale: 1.25;
+  top: 0;
+  left: -1.5%;
+  width: 113%;
+  max-width: 100%;
+  height: auto;
+  z-index: 0; /* 배경처럼 뒤로 보내기 */
+}
+.bg-box::before {
+  background-size: 150%;
+  background-position: center center; /* 👈 반드시 넣기 */
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
 h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 40px;
 }
+h2{font-size: 35px;}
+h3{font-size: 30px;}
 .countdown {
-    font-size: 1.5em;
+    font-size: 25px;
     margin: 20px 0;
 }
 iframe {
@@ -50,6 +100,6 @@ img {
     margin-top: 30px;
 }
 @media (max-width: 600px) {
-    h1 { font-size: 1.6em; }
-    .countdown { font-size: 1.2em; }
+    h1 { font-size: 40px; }
+   // .countdown { font-size: 1.2em; } //
 }
