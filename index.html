@@ -7,17 +7,32 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Archivo+Black&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
+    <div class="bg-box">
+        <img src="image/top_bow01.png" class="bg-img">
+    </div>
     <header>
-        <h1>Saimon + Hana</h1>
-        <p>= Endless Happiness!!</p>
+         
+            
+            <h1 class="Point">Saimon + Hana</h1>
+            <h3>= Endless Happiness!!</h3>
+            <div class="img-container">
+                <img class="main_baby" src="image/main_baby_lightpink.PNG" alt="childhood">
+            </div>
+        </div>      
+        <h1>27.10.2025</h1>
     </header>
 
     <section>
-        <h2>Countdown to the Big Day</h2>
+        <h2>SAVE THE DATE</h2>
+        <p>
+
+        </p>
+        <h3>Countdown to the Big Day</h3>
         <div class="countdown" id="countdown"></div>
     </section>
 
@@ -43,7 +58,7 @@
     </footer>
 
     <script>
-    const weddingDate = new Date("2025-12-20T15:00:00").getTime();
+    const weddingDate = new Date("2025-10-27T14:15:00").getTime();
     const timer = setInterval(function() {
         const now = new Date().getTime();
         const distance = weddingDate - now;
