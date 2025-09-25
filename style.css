@@ -33,7 +33,7 @@ body {
     margin-right: 25px;
     padding-top: 25px;
     padding-bottom: 50px;
-    background-color: #fffaecef;
+    background-color: #fffefc;
     color: #333;
 }
 
@@ -42,7 +42,7 @@ body {
 header {
     padding-top: 95px;
     padding-bottom: 30px;
-    background-color: #fffaecef; }
+   }
 
 .main_baby {margin-left:5px; margin:0 auto; display:block; }
 .bg-box {
@@ -71,7 +71,9 @@ header {
 
 
 
-
+p {
+  font-size: 20px;
+}
 h1 {
     margin: 0;
     font-size: 40px;
@@ -96,6 +98,95 @@ img {
     max-width: 90%;
     border-radius: 8px;
 }
+
+
+
+/* SAVE THE DATE */
+.calendar {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.calendar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar th, .calendar td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.calendar td {
+  height: 40px;
+  text-align: center;
+}
+
+.calendar td:nth-child(1) {
+  color: rgb(218, 65, 65); /* Sundays in red */
+}
+
+td.theday { font-weight: 500; font-size: larger; }
+
+
+/* Our Little spot */
+iframe {
+  width: 90%;
+  max-width: 500px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.img-drawing {
+  width: 120px;
+}
+
+
+/* Our big day plan */
+.schedule-item {
+    display: flex;           /* Flexbox 적용 */
+    align-items: center;     /* 세로 중앙 정렬 */
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.schedule-item .schedule-text,
+.schedule-item .schedule-img {
+    width: 48%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.plan-one .schedule-text, 
+.plan-three .schedule-text {
+  text-align: right;
+} 
+.plan-two .schedule-text, 
+.plan-four .schedule-text {
+  text-align: left;
+} 
+
+.schedule-img {
+  text-align: right;
+  vertical-align: middle;
+  align-items: center;
+  
+}
+.schedule-img img {
+   width: 100px;
+    height: auto;
+    display: block;
+}
+
+
+
+
+
+/**/
+/**/
+
+
 .rsvp {
     margin-top: 30px;
 }
