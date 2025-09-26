@@ -115,10 +115,8 @@ header p {
 
 .bg-img {
   position: absolute;
-  scale: 1.25;
   top: 0;
   left: -1.5%;
-  width: 113%;
   max-width: 100%;
   height: auto;
   z-index: 0; /* 배경처럼 뒤로 보내기 */
