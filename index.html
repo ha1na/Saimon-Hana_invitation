@@ -269,6 +269,19 @@
         </div>
     </section> -->
 
+    <!-- Comment Section -->
+    <section class="section-comments">
+        <h2>Leave Us a Message ❤️</h2>
+        <p>We’d love to hear from you! Drop your wishes, advice, or any thoughts below 🥰</p>
+
+        <!-- Commentbox.io Embed -->
+        <div class="commentbox"></div>
+        <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+        <script>
+            commentBox('Y5753507411918848-proj');
+        </script>
+    </section>
+
 
     <!-- ❤️ 푸터 -->
     <footer style="margin: 30px 0; font-size: 0.8em;">
@@ -331,5 +344,77 @@
         });
 
     </script>
+
+    <!-- FADE IN - OUT -->
+     <!-- <script>
+        const sections = document.querySelectorAll('.fade-up-01');
+
+        function revealOnScroll() {
+        const windowHeight = window.innerHeight;
+        
+        sections.forEach(section => {
+            const sectionTop = section.getBoundingClientRect().top;
+            const revealPoint = 150; // 화면 아래에서 얼마나 일찍 나타날지
+
+            if (sectionTop < windowHeight - revealPoint) {
+            section.classList.add('visible');
+            } 
+        });
+        }
+
+        window.addEventListener('scroll', revealOnScroll);
+        window.addEventListener('load', revealOnScroll); // 페이지 로드 시에도 적용
+
+     </script> -->
+
+
+   <script>
+    //     document.addEventListener("DOMContentLoaded", () => {
+    // // 헤더 요소는 바로 보이게
+    // document.querySelectorAll("header *").forEach(el => {
+    //     el.classList.add("fade-up", "visible");
+    // });
+
+    // // 섹션 요소만 스크롤 시 등장
+    // const fadeElements = document.querySelectorAll("section *");
+    // fadeElements.forEach(el => el.classList.add("fade-up"));
+
+    // const observer = new IntersectionObserver((entries) => {
+    //     entries.forEach(entry => {
+    //     if(entry.isIntersecting){
+    //         entry.target.classList.add("visible");
+    //         observer.unobserve(entry.target); // 한 번 나타나면 관찰 종료
+    //     }
+    //     });
+    // }, { threshold: 0.2 });
+
+    // fadeElements.forEach(el => observer.observe(el));
+    // });
+
+document.addEventListener("DOMContentLoaded", () => {
+  // 섹션 요소만 fade-up 적용
+  const fadeElements = document.querySelectorAll("section *");
+  fadeElements.forEach(el => el.classList.add("fade-up"));
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+
+  fadeElements.forEach(el => observer.observe(el));
+});
+
+
+
+
+
+    </script>
+
+
+
 </body>
 </html>
