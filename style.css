@@ -325,7 +325,7 @@ td.theday::before {
   content: "";
   position: relative;
   width: auto;
-  height: 336px;
+  height: 330px;
   background-size: cover;
   padding: 86px 0;
   color: #fffefc;
@@ -416,6 +416,23 @@ iframe {
   margin-top: 5px;
 }
 
+.plan-three .schedule-text::before {
+ content: "";
+    position: absolute;
+    z-index: -1;
+    background: url(image/drawing_circle.png) no-repeat left center;
+    /* background-size: 120%; */
+    /* background-repeat: no-repeat; */
+    width: 267px;
+    height: 214px;
+    /* background-position: center; */
+    background-size: contain;
+    transform: translate(-79%, -12%) rotate(12deg);
+}
+.plan-three .schedule-text h3 {
+  background: url("image/deco_mark.png") no-repeat center right 60px;
+  background-size: 30px;
+}
 
 
 /* EAT, LAUGH, LOVE - Ahmet */
@@ -446,22 +463,24 @@ iframe {
   padding: 60px 20px;
 }
 
-.section-gallery h2 {
+
+.section-gallery img {
+  width: 100px;
 }
 
 .section-gallery .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 2px;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 40px auto 0px;
 }
 
 .section-gallery .gallery img {
   width: 100%;
   aspect-ratio: 1 / 1; /* 정사각형 유지 */
   object-fit: cover; /* 사진 비율 유지하면서 꽉 채우기 */
-  border-radius: 12px;
+  border-radius: 0px;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
@@ -503,14 +522,17 @@ iframe {
 /* RSVP */
 
 .section-rsvp {
-  text-align: center;
-  padding: 86px 20px;
-  background: url("image/frame_rsvp04.png") no-repeat center center;
-  background-size: 100%;
-  box-sizing: border-box;
+    text-align: center;
+    padding: 86px 20px;
+    background: url(image/frame_rsvp04.png) no-repeat top 37% center;
+    background-size: 100%;
+    box-sizing: border-box;
+    background-color: #f8f5f2;
   
 }
-
+.section-rsvp h2 {
+  padding-top: 55px;
+}
 
 .section-rsvp p {
   font-size: 18px;
@@ -536,9 +558,149 @@ iframe {
 }
      
 
+/* Comment Section */
+.section-comments {
+  text-align: center;
+  padding: 60px 20px;
+
+}
 
 
-/* 지피티의 RSVP */
+
+.section-comments p {
+
+  margin-bottom: 30px;
+
+}
+
+/* 댓글 박스 스타일 (앞에서 만든 것 적용) */
+/* .commentbox {
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 254, 252, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border: 1px solid rgba(255,255,255,0.3);
+} */
+/* 댓글 박스 전체 */
+.commentbox {
+  background-color: #fffaf8; /* 아주 연한 베이지/핑크 */
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* 제목 (Comments 라고 나오는 부분) */
+.commentbox .cb-header {
+  color: #C13C35;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* 댓글 작성 텍스트 영역 */
+.commentbox textarea {
+  background-color: #fff;
+  border: 1px solid #f0d7d7;
+  border-radius: 12px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.commentbox textarea:focus {
+  border-color: #C13C35;
+  box-shadow: 0 0 4px rgba(193, 60, 53, 0.4);
+}
+
+/* 버튼 스타일 */
+.commentbox button {
+  background-color: #C13C35;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.commentbox button:hover {
+  background-color: #a8302b;
+}
+
+/* 개별 댓글 */
+.commentbox .cb-comment {
+  border-bottom: 1px solid #f5e3e3;
+  padding: 8px 0;
+}
+
+.commentbox .cb-comment-author {
+  font-weight: 600;
+  color: #C13C35;
+}
+
+.commentbox .cb-comment-text {
+  color: #333;
+  font-size: 14px;
+}
+
+
+
+/* FADE IN OUT */
+.fade-up-01 {
+  opacity: 0;               /* 처음엔 안보이게 */
+  transform: translateY(20px); /* 살짝 아래로 이동 */
+  transition: all 0.8s ease-out; /* 스르륵 올라오는 효과 */
+}
+.fade-up-02 {
+  opacity: 0;               /* 처음엔 안보이게 */
+  transform: translateY(20px); /* 살짝 아래로 이동 */
+  transition: all 1.0s ease-out; /* 스르륵 올라오는 효과 */
+}
+.fade-up-03 {
+  opacity: 0;               /* 처음엔 안보이게 */
+  transform: translateY(20px); /* 살짝 아래로 이동 */
+  transition: all 1.2s ease-out; /* 스르륵 올라오는 효과 */
+}
+
+.fade-up-01.visible {
+  opacity: 1;
+  transform: translateY(0); /* 원래 위치로 이동 */
+}
+
+
+
+/* 기존 fade-up 설정 */
+.fade-up {
+  opacity: 0;               
+  transform: translateY(20px); 
+  transition: all 0.8s ease-out; 
+}
+
+/* 보일 때 */
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 헤더 요소용 딜레이 (조금 느리게 나타나게) */
+header, header * {
+  opacity: 1;             /* 바로 보이게 */
+  transform: translateY(0); /* 이동 없이 */
+  transition: all 0.8s ease-out;
+}
+
+
 
 
 
@@ -546,5 +708,5 @@ iframe {
 
 @media (max-width: 600px) {
     h1 { font-size: 40px; }
-   // .countdown { font-size: 1.2em; } //
+   /* .countdown { font-size: 1.2em; } */
 }
