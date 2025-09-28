@@ -342,10 +342,12 @@ td.theday::before {
   content: "";
   position: relative;
   width: auto;
+  max-width: 374px;
   height: 330px;
   background-size: cover;
   padding: 86px 0;
   color: #fffefc;
+  margin: 0 auto;
 }
 .section-countdown h4 {
   margin-bottom: 15px;
