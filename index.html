@@ -152,6 +152,7 @@
             <!-- 지도 iframe -->
             <div class="spot-map">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.0707650810023!2d153.02464250000003!3d-27.467056199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a053ef3ef4b%3A0x3aa467841696a98!2sRegistry%20of%20Births%2C%20Deaths%20%26%20Marriages!5e0!3m2!1sen!2sau!4v1759064016286!5m2!1sen!2sau" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
             </div>
 
             <!-- 클릭 가능한 주소 -->
@@ -277,8 +278,8 @@
         </section>
 
         <!-- Modal (클릭 시 크게 보기) -->
-        <div id="imageModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="imageModal" class="modal" onclick="closeModal()">
+        <!-- <span class="close" onclick="closeModal()">&times;</span> -->
         <img class="modal-content" id="modalImg" onclick="closeModal()">
         </div>
 
