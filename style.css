@@ -363,7 +363,7 @@ iframe {
   width: 120px;
 }
 .section-spot {
-    background: url('image/deco_heart01.png') no-repeat top center 0;
+    background: url('image/underline_heart.png') no-repeat top center;
     background-size: 38px;
 }
 .section-spot h3 {
