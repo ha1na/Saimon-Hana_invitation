@@ -13,291 +13,315 @@
 </head>
 
 <body>
-    <!-- 🎀 배경 이미지 -->
-    <div class="bg-box">
-        <img src="image/top_banner_red.png" class="bg-img" alt="bow">
+    <!-- 🖼 스플래시 화면 -->
+    <div id="splash-screen">
+        <video autoplay muted playsinline id="splash-video">
+            <source src="video/main-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
     </div>
 
-
-    <!-- 음악 버튼 (우측 상단) -->
-    <audio id="bgMusic" autoplay loop>
-    <source src="music/your-music-file.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-    </audio>
-
-    <button id="musicBtn">
-    <img src="image/music01_red.png" alt="Music" />
-    </button>
-
-
-    <!-- 🏠 헤더 -->
-    <header>
-        <h1 class="Point">Saimon + Hana</h1>
-        <h3>= Endless Happiness</h3>
-        <div class="img-container">
-            <img class="main_baby" src="image/main_baby_deco.png" alt="childhood">
+    <div id="main-content">
+        <!-- 🎀 배경 이미지 -->
+        <div class="bg-box">
+            <img src="image/top_banner_red.png" class="bg-img" alt="bow">
         </div>
-        <h2 class="main-date">27.OCTOBER.2025</h2>
-        <p>LOVE STORY, GLOBAL EDITION</p>
-    </header>
 
-    
-    <!-- 📅 Save the date -->
-    <section class="section-date ribbon-frame bg-color">
-        <h2>OUR LOVE DATE</h2>
-        <p>Circle the Date <br>Join Our FOREVER</p>
-        <img class="drawing_bell img-drawing" src="image/drawing_bells.png" alt="red bells">
-        <section class="calendar">
-            <h2>October 2025</h2>
-            <table>
-                <thead>
-                <tr>
-                    <th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
-                <tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr>
-                <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
-                <tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
-                <tr><td>26</td><td class="theday">27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td></tr>
-                </tbody>
-            </table>
+
+        <!-- 음악 버튼 (우측 상단) -->
+        <audio id="bgMusic" autoplay loop>
+            <source src="music/your-music-file.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            </audio>
+
+            <button id="musicBtn">
+            <img src="image/music01_red.png" alt="Music" />
+        </button>
+
+
+        <!-- 🏠 헤더 -->
+        <header>
+            <h1 class="Point header-appear">Saimon + Hana</h1>
+            <h3 class="header-appear">= Endless Happiness</h3>
+            <div class="img-container header-appear">
+                <img class="main_baby" src="image/main_baby_deco.png" alt="childhood">
+            </div>
+            <h2 class="main-date header-appear">27.OCTOBER.2025</h2>
+            <p class="header-appear">LOVE STORY, GLOBAL EDITION</p>
+        </header>
+
+        
+        <!-- 📅 Save the date -->
+        <section class="section-date ribbon-frame bg-color">
+            <h2>OUR LOVE DATE</h2>
+            <p>Circle the Date <br>Join Our FOREVER</p>
+            <img class="drawing_bell img-drawing" src="image/drawing_bells.png" alt="red bells">
+            <section class="calendar">
+                <h2>October 2025</h2>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>S</th><th>M</th><th>T</th><th>W</th><th>T</th><th>F</th><th>S</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr><td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+                    <tr><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td></tr>
+                    <tr><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td></tr>
+                    <tr><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td></tr>
+                    <tr><td>26</td><td class="theday">27</td><td>28</td><td>29</td><td>30</td><td>31</td><td></td></tr>
+                    </tbody>
+                </table>
+            </section>
+            <p>Monday, 14:15PM <br>27th of October, 2025</p>
         </section>
-        <p>Monday, 14:15PM <br>27th of October, 2025</p>
-    </section>
 
-    <section>
-        <div class="section-countdown">
-            <h4>Countdown to the Big Day</h4>
-            <div class="countdown" id="countdown"></div>
-        </div>
-    </section>
-
-
-    <!-- 💌 Our Story -->
-    <section class="bg-color">
-        <h2>LITTLE NOTES</h2>
-        <div class="notes-item notes-saimon">
-            <img src="image/deco_shine.png" alt="Saimon">
-            <div class="notes-text">
-                <h4>Can't Believe</h4>
-                <p>I am so happy hahaha
-                    <br>I am so happy hahaha
-                </p>
+        <section>
+            <div class="section-countdown">
+                <h4>Countdown to the Big Day</h4>
+                <div class="countdown" id="countdown"></div>
             </div>
-        </div>
-        <div class="notes-item notes-hana">
-            <div class="notes-text">
-                <h4>Can't Believe</h4>
-                <p>I am so happy hahaha
-                    <br>I am so happy hahaha
-                </p>
+        </section>
+
+
+        <!-- 💌 Our Story -->
+        <section class="bg-color">
+            <h2>LITTLE NOTES</h2>
+            <div class="notes-item notes-saimon">
+                <img src="image/deco_shine.png" alt="Saimon">
+                <div class="notes-text">
+                    <h4>Can't Believe</h4>
+                    <p>I am so happy hahaha
+                        <br>I am so happy hahaha
+                    </p>
+                </div>
             </div>
-            <img src="image/deco_shine.png" alt="Hana">
-        </div>
-    </section>
-
-
-
-    <!-- 📍 Our Little Promise Spot -->
-    <section class="section-spot">
-        <h2>CEREMONY</h2>
-        <h3>Our Little Promise Spot</h3>
-        <p>Where Love Becomes Official</p>
-        <img class="img-middle img-drawing" src="image/drawing_ring.png">
-
-        <!-- 지도 iframe -->
-         <div class="spot-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.070918713982!2d153.0220729394325!3d-27.46705141669112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a053ef3ef4b%3A0x3aa467841696a98!2sRegistry%20of%20Births%2C%20Deaths%20%26%20Marriages!5e0!3m2!1sko!2sau!4v1758724358457!5m2!1sko!2sau&hl=en" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
-         <!-- 클릭 가능한 주소 -->
-        <p style="margin-top:10px; font-size:18px;">
-        <a href="https://www.google.com/maps/place/Registry+of+Births,+Deaths+%26+Marriages,+Brisbane/@-27.4670514,153.0220729,17z" target="_blank" style="text-decoration:none; color:#d14747; font-weight:bold;">
-            Brisbane Registry <br>
-            Level 32, 180 Ann St, Brisbane City QLD
-        </a>
-        <br><p class="ex02">By invitaion only</p>
-    </p>
-    </section>
-
-
-    <!-- 📷 사진 -->
-    <section class="section-fourcut bg-color">
-        <img class="fourcut" src="image/fourcut.png" alt="couple picture">
-    </section>
-
-
-    <!-- 💌 Our Big day plan  -->
-    <section class="our-big-day section-plan">
-        <h2>OUR BIG DAY PLAN</h2>
-        <div class="schedule-item plan-one">
-            <div class="schedule-text">
-                <h3>14:30</h3>
-                <p>OUR LOVE <BR>CEREMONY</p>
-                <p class="ex01">REGISTRY BRISBANE</p>  
+            <div class="notes-item notes-hana">
+                <div class="notes-text">
+                    <h4>Can't Believe</h4>
+                    <p>I am so happy hahaha
+                        <br>I am so happy hahaha
+                    </p>
+                </div>
+                <img src="image/deco_shine.png" alt="Hana">
             </div>
-            <div class="schedule-img">
-                <img src="image/drawing_ring.png">
-            </div>    
-        </div>
-        <div class="schedule-item plan-two">
-            <div class="schedule-img">
-                <img src="image/drawing_camera.png">
-            </div>
-            <div class="schedule-text">
-                <h3>15:30</h3>
-                <p>STRIKE A POSE</p>
-                <p class="ex01">SOUTH BANK PARK</p>
-            </div>
-        </div>
-        <div class="schedule-item plan-three">
-            <div class="schedule-text point-eat">
-                <h3>17:00</h3>
-                <p>EAT, LAUGH, LOVE</p>
-                <p class="ex01">Ahmet's Turkish Restaurant</p>
-                <p class="ex02">SHOP 10/168 GREY ST, <Br> SOUTHBANK</p>  
-            </div>
-            <div class="schedule-img">
-                <img src="image/drawing_champaign.png">
-            </div> 
-        </div>
-        <div class="schedule-item plan-four">
-            <div class="schedule-img">
-                <img src="image/drawing_cake.png">
-            </div>
-            <div class="schedule-text">
-                <h3>20:00</h3>
-                <p>SWEET BITES <BR>& SMILES</p>
-                <p class="ex01">Our first sweet bite <Br>together as Mr & Mrs</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    
-    <!-- 📍 EAT, LAUGH, LOVE -->
-    <section class="section-ahmet section-spot bg-color">
-        <div class="bg-color-white">
-            <h2>EAT, LAUGH, LOVE</h2>
-            <h3>Bites, hugs, and happy hearts ♥</h3>
-            <p>Join our sweet celebration</p>
-            <img class="img-middle img-drawing" src="image/drawing_champaign.png">
-            
+
+
+        <!-- 📍 Our Little Promise Spot -->
+        <section class="section-spot">
+            <h2>CEREMONY</h2>
+            <h3>Our Little Promise Spot</h3>
+            <p>Where Love Becomes Official</p>
+            <img class="img-middle img-drawing" src="image/drawing_ring.png">
+
             <!-- 지도 iframe -->
             <div class="spot-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.7120716589066!2d153.02154539999998!3d-27.478221899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a0eb97a2afb%3A0x6c2810f4c9ed7fd5!2sAhmet&#39;s%20Turkish%20Restaurant!5e0!3m2!1sko!2sau!4v1758876047936!5m2!1sko!2sau&hl=en" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.070918713982!2d153.0220729394325!3d-27.46705141669112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a053ef3ef4b%3A0x3aa467841696a98!2sRegistry%20of%20Births%2C%20Deaths%20%26%20Marriages!5e0!3m2!1sko!2sau!4v1758724358457!5m2!1sko!2sau&hl=en" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
+
             <!-- 클릭 가능한 주소 -->
             <p style="margin-top:10px; font-size:18px;">
-            <a href="https://maps.app.goo.gl/mVWE1z68XqKLR7Zu7" target="_blank" style="text-decoration:none; color:#d14747; font-weight:bold;">
-                Ahmet's Turkish Restaurant
-                
-                <BR>SHOP 10/168 GREY ST,
-                <br> SOUTHBANK, BRISBANE
+            <a href="https://www.google.com/maps/place/Registry+of+Births,+Deaths+%26+Marriages,+Brisbane/@-27.4670514,153.0220729,17z" target="_blank" style="text-decoration:none; color:#d14747; font-weight:bold;">
+                Brisbane Registry <br>
+                Level 32, 180 Ann St, Brisbane City QLD
             </a>
+            <br><p class="ex02">By invitaion only</p>
+        </p>
+        </section>
+
+
+        <!-- 📷 사진 -->
+        <section class="section-fourcut bg-color">
+            <img class="fourcut" src="image/fourcut.png" alt="couple picture">
+        </section>
+
+
+        <!-- 💌 Our Big day plan  -->
+        <section class="our-big-day section-plan">
+            <h2>OUR BIG DAY PLAN</h2>
+            <div class="schedule-item plan-one">
+                <div class="schedule-text">
+                    <h3>14:30</h3>
+                    <p>OUR LOVE <BR>CEREMONY</p>
+                    <p class="ex01">REGISTRY BRISBANE</p>  
+                </div>
+                <div class="schedule-img">
+                    <img src="image/drawing_ring.png">
+                </div>    
+            </div>
+            <div class="schedule-item plan-two">
+                <div class="schedule-img">
+                    <img src="image/drawing_camera.png">
+                </div>
+                <div class="schedule-text">
+                    <h3>15:30</h3>
+                    <p>STRIKE A POSE</p>
+                    <p class="ex01">SOUTH BANK PARK</p>
+                </div>
+            </div>
+            <div class="schedule-item plan-three">
+                <div class="schedule-text point-eat">
+                    <h3>17:00</h3>
+                    <p>EAT, LAUGH, LOVE</p>
+                    <p class="ex01">Ahmet's Turkish Restaurant</p>
+                    <p class="ex02">SHOP 10/168 GREY ST, <Br> SOUTHBANK</p>  
+                </div>
+                <div class="schedule-img">
+                    <img src="image/drawing_champaign.png">
+                </div> 
+            </div>
+            <div class="schedule-item plan-four">
+                <div class="schedule-img">
+                    <img src="image/drawing_cake.png">
+                </div>
+                <div class="schedule-text">
+                    <h3>20:00</h3>
+                    <p>SWEET BITES <BR>& SMILES</p>
+                    <p class="ex01">Our first sweet bite <Br>together as Mr & Mrs</p>
+                </div>
+            </div>
+        </section>
+
+        
+        <!-- 📍 EAT, LAUGH, LOVE -->
+        <section class="section-ahmet section-spot bg-color">
+            <div class="bg-color-white">
+                <h2>EAT, LAUGH, LOVE</h2>
+                <h3>Bites, hugs, and happy hearts ♥</h3>
+                <p>Join our sweet celebration</p>
+                <img class="img-middle img-drawing" src="image/drawing_champaign.png">
+                
+                <!-- 지도 iframe -->
+                <div class="spot-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3539.7120716589066!2d153.02154539999998!3d-27.478221899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a0eb97a2afb%3A0x6c2810f4c9ed7fd5!2sAhmet&#39;s%20Turkish%20Restaurant!5e0!3m2!1sko!2sau!4v1758876047936!5m2!1sko!2sau&hl=en" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!-- 클릭 가능한 주소 -->
+                <p style="margin-top:10px; font-size:18px;">
+                <a href="https://maps.app.goo.gl/mVWE1z68XqKLR7Zu7" target="_blank" style="text-decoration:none; color:#d14747; font-weight:bold;">
+                    Ahmet's Turkish Restaurant
+                    
+                    <BR>SHOP 10/168 GREY ST,
+                    <br> SOUTHBANK, BRISBANE
+                </a>
+                </p>
+            </div>
+        </section>
+
+
+        <!-- 💌 PHOTOSHOOT -->
+        <section class="section-gallery">
+            <h2>Our Little Moments</h2>
+            <img class="img-middle img-drawing" src="image/drawing_bouquet02.png" alt="flowers">
+            <div class="gallery">
+                <img src="image/main_baby_deco.png" alt="Gallery 1" onclick="openModal(this)">
+                <img src="image/gallery2.jpg" alt="Gallery 2" onclick="openModal(this)">
+                <img src="image/gallery3.jpg" alt="Gallery 3" onclick="openModal(this)">
+                <img src="image/gallery4.jpg" alt="Gallery 4" onclick="openModal(this)">
+                <img src="image/gallery5.jpg" alt="Gallery 5" onclick="openModal(this)">
+                <img src="image/gallery6.jpg" alt="Gallery 6" onclick="openModal(this)">
+                <img src="image/gallery7.jpg" alt="Gallery 7" onclick="openModal(this)">
+                <img src="image/gallery8.jpg" alt="Gallery 8" onclick="openModal(this)">
+                <img src="image/gallery9.jpg" alt="Gallery 9" onclick="openModal(this)">
+            </div>
+        </section>
+
+        <!-- Modal (클릭 시 크게 보기) -->
+        <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        </div>
+
+        <script>
+        function openModal(img) {
+            document.getElementById("imageModal").style.display = "flex";
+            document.getElementById("modalImg").src = img.src;
+        }
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+        </script>
+
+
+
+        <!-- 📝 RSVP -->
+        <section class="section-rsvp bg-color">
+            <h2>BE OUR GUEST 💌</h2>
+            <p>
+                Are you coming to cheer us on? 🎉  <br>
+                Tell us if you’re in for the ceremony & dinner.<br>
+                Tap the button below. <br>
+                we can’t wait to see you!
             </p>
-        </div>
-    </section>
+
+            <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeiH-nH_Cg6M-PsevTsK1QR8qQlvobCxZVYnCpwlXRzi0JfKQ/viewform?usp=header" height="400"></iframe> -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeiH-nH_Cg6M-PsevTsK1QR8qQlvobCxZVYnCpwlXRzi0JfKQ/viewform?usp=header" target="_blank" class="rsvp-button">
+                RSVP Now
+            </a>
+        </section>
 
 
-     <!-- 💌 PHOTOSHOOT -->
-    <section class="section-gallery">
-        <h2>Our Little Moments</h2>
-        <img class="img-middle img-drawing" src="image/drawing_bouquet02.png" alt="flowers">
-        <div class="gallery">
-            <img src="image/main_baby_deco.png" alt="Gallery 1" onclick="openModal(this)">
-            <img src="image/gallery2.jpg" alt="Gallery 2" onclick="openModal(this)">
-            <img src="image/gallery3.jpg" alt="Gallery 3" onclick="openModal(this)">
-            <img src="image/gallery4.jpg" alt="Gallery 4" onclick="openModal(this)">
-            <img src="image/gallery5.jpg" alt="Gallery 5" onclick="openModal(this)">
-            <img src="image/gallery6.jpg" alt="Gallery 6" onclick="openModal(this)">
-            <img src="image/gallery7.jpg" alt="Gallery 7" onclick="openModal(this)">
-            <img src="image/gallery8.jpg" alt="Gallery 8" onclick="openModal(this)">
-            <img src="image/gallery9.jpg" alt="Gallery 9" onclick="openModal(this)">
-        </div>
-    </section>
+    <!-- 
+        <section class="rsvp-section ribbon-frame">
+            <div class="rsvp-bg">
+                <h2>RSVP</h2>
+                <p>Let us know if you can celebrate our special day! 💌</p>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeiH-nH_Cg6M-PsevTsK1QR8qQlvobCxZVYnCpwlXRzi0JfKQ/viewform?usp=header" 
+                        width="100%" 
+                        height="600" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0">
+                    Loading…
+                </iframe>
+            </div>
+        </section> -->
 
-    <!-- Modal (클릭 시 크게 보기) -->
-    <div id="imageModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <img class="modal-content" id="modalImg">
+        <!-- Comment Section -->
+        <section class="section-comments">
+            <h2>Leave Us a Message ❤️</h2>
+            <p>We’d love to hear from you! Drop your wishes, advice, or any thoughts below 🥰</p>
+
+            <!-- Commentbox.io Embed -->
+            <div class="commentbox"></div>
+            <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+            <script>
+                commentBox('Y5753507411918848-proj');
+            </script>
+        </section>
+
+
+        <!-- ❤️ 푸터 -->
+        <footer style="margin: 30px 0; font-size: 0.8em;">
+            <p>Made with ♥ by Hana</p>
+        </footer>
+
     </div>
 
+
+
+
+
+
+
+    <!-- 스플래시 화면 -->
     <script>
-    function openModal(img) {
-        document.getElementById("imageModal").style.display = "flex";
-        document.getElementById("modalImg").src = img.src;
-    }
-    function closeModal() {
-        document.getElementById("imageModal").style.display = "none";
-    }
+        document.addEventListener("DOMContentLoaded", () => {
+        const splash = document.getElementById("splash-screen");
+        const video = document.getElementById("splash-video");
+
+        // 비디오 끝나면 스플래시 숨기기
+        video.addEventListener("ended", () => {
+            splash.classList.add("hide");
+        });
+
+        // 혹시 비디오 길이가 길면 일정 시간 지나면 강제 숨김 (예: 6초)
+        setTimeout(() => {
+            splash.classList.add("hide");
+        }, 8500);
+        });
     </script>
-
-
-
-    <!-- 📝 RSVP -->
-    <section class="section-rsvp bg-color">
-        <h2>BE OUR GUEST 💌</h2>
-        <p>
-            Are you coming to cheer us on? 🎉  <br>
-            Tell us if you’re in for the ceremony & dinner.<br>
-            Tap the button below. <br>
-            we can’t wait to see you!
-        </p>
-
-        <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeiH-nH_Cg6M-PsevTsK1QR8qQlvobCxZVYnCpwlXRzi0JfKQ/viewform?usp=header" height="400"></iframe> -->
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeiH-nH_Cg6M-PsevTsK1QR8qQlvobCxZVYnCpwlXRzi0JfKQ/viewform?usp=header" target="_blank" class="rsvp-button">
-            RSVP Now
-        </a>
-    </section>
-
-
-<!-- 
-    <section class="rsvp-section ribbon-frame">
-        <div class="rsvp-bg">
-            <h2>RSVP</h2>
-            <p>Let us know if you can celebrate our special day! 💌</p>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeiH-nH_Cg6M-PsevTsK1QR8qQlvobCxZVYnCpwlXRzi0JfKQ/viewform?usp=header" 
-                    width="100%" 
-                    height="600" 
-                    frameborder="0" 
-                    marginheight="0" 
-                    marginwidth="0">
-                Loading…
-            </iframe>
-        </div>
-    </section> -->
-
-    <!-- Comment Section -->
-    <section class="section-comments">
-        <h2>Leave Us a Message ❤️</h2>
-        <p>We’d love to hear from you! Drop your wishes, advice, or any thoughts below 🥰</p>
-
-        <!-- Commentbox.io Embed -->
-        <div class="commentbox"></div>
-        <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
-        <script>
-            commentBox('Y5753507411918848-proj');
-        </script>
-    </section>
-
-
-    <!-- ❤️ 푸터 -->
-    <footer style="margin: 30px 0; font-size: 0.8em;">
-        <p>Made with ♥ by Hana</p>
-    </footer>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -346,72 +370,31 @@
     </script>
 
     <!-- FADE IN - OUT -->
-     <!-- <script>
-        const sections = document.querySelectorAll('.fade-up-01');
-
-        function revealOnScroll() {
-        const windowHeight = window.innerHeight;
-        
-        sections.forEach(section => {
-            const sectionTop = section.getBoundingClientRect().top;
-            const revealPoint = 150; // 화면 아래에서 얼마나 일찍 나타날지
-
-            if (sectionTop < windowHeight - revealPoint) {
-            section.classList.add('visible');
-            } 
-        });
-        }
-
-        window.addEventListener('scroll', revealOnScroll);
-        window.addEventListener('load', revealOnScroll); // 페이지 로드 시에도 적용
-
-     </script> -->
-
-
-   <script>
-    //     document.addEventListener("DOMContentLoaded", () => {
-    // // 헤더 요소는 바로 보이게
-    // document.querySelectorAll("header *").forEach(el => {
-    //     el.classList.add("fade-up", "visible");
-    // });
-
-    // // 섹션 요소만 스크롤 시 등장
-    // const fadeElements = document.querySelectorAll("section *");
-    // fadeElements.forEach(el => el.classList.add("fade-up"));
-
-    // const observer = new IntersectionObserver((entries) => {
-    //     entries.forEach(entry => {
-    //     if(entry.isIntersecting){
-    //         entry.target.classList.add("visible");
-    //         observer.unobserve(entry.target); // 한 번 나타나면 관찰 종료
-    //     }
-    //     });
-    // }, { threshold: 0.2 });
-
-    // fadeElements.forEach(el => observer.observe(el));
-    // });
-
-document.addEventListener("DOMContentLoaded", () => {
-  // 섹션 요소만 fade-up 적용
-  const fadeElements = document.querySelectorAll("section *");
-  fadeElements.forEach(el => el.classList.add("fade-up"));
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      }
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+    // 1) 헤더 애니메이션 - 느리고 드라마틱하게
+    const headerEls = document.querySelectorAll(".header-appear");
+    headerEls.forEach((el, index) => {
+        setTimeout(() => {
+        el.classList.add("visible");
+        }, 800 + index * 500); // 첫 등장은 0.8초 후, 요소별 0.5초 간격
     });
-  }, { threshold: 0.2 });
 
-  fadeElements.forEach(el => observer.observe(el));
-});
+    // 2) 섹션 요소들 fade-up
+    const fadeElements = document.querySelectorAll("section *");
+    fadeElements.forEach(el => el.classList.add("fade-up"));
 
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+        }
+        });
+    }, { threshold: 0.2 });
 
-
-
-
+    fadeElements.forEach(el => observer.observe(el));
+    });
     </script>
 
 
