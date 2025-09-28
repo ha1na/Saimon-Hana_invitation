@@ -657,56 +657,73 @@ iframe {
 
 
 /* FADE IN OUT */
-.fade-up-01 {
-  opacity: 0;               /* 처음엔 안보이게 */
-  transform: translateY(20px); /* 살짝 아래로 이동 */
-  transition: all 0.8s ease-out; /* 스르륵 올라오는 효과 */
-}
-.fade-up-02 {
-  opacity: 0;               /* 처음엔 안보이게 */
-  transform: translateY(20px); /* 살짝 아래로 이동 */
-  transition: all 1.0s ease-out; /* 스르륵 올라오는 효과 */
-}
-.fade-up-03 {
-  opacity: 0;               /* 처음엔 안보이게 */
-  transform: translateY(20px); /* 살짝 아래로 이동 */
-  transition: all 1.2s ease-out; /* 스르륵 올라오는 효과 */
-}
-
-.fade-up-01.visible {
-  opacity: 1;
-  transform: translateY(0); /* 원래 위치로 이동 */
-}
-
-
-
 /* 기존 fade-up 설정 */
 .fade-up {
-  opacity: 0;               
-  transform: translateY(20px); 
-  transition: all 0.8s ease-out; 
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.8s ease-out;
 }
-
-/* 보일 때 */
 .fade-up.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* 헤더 요소용 딜레이 (조금 느리게 나타나게) */
-header, header * {
-  opacity: 1;             /* 바로 보이게 */
-  transform: translateY(0); /* 이동 없이 */
-  transition: all 0.8s ease-out;
+/* 헤더용 - 더 느리고 부드럽게 */
+.header-appear {
+  opacity: 0;
+  transform: translateY(40px); /* 좀 더 멀리서 올라오도록 */
+  transition: all 1s ease-out; /* 속도 느리게 */
+}
+.header-appear.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 
+/* 스플래시 화면 스타일 */
+#splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fffefc; /* 배경색 (원하는 색 넣기) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* 제일 위로 */
+  transition: opacity 1s ease-out, visibility 1s ease-out;
+}
+
+#splash-screen img {
+  max-width: 70%;
+  height: auto;
+}
+
+#splash-screen.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* 본문은 기본적으로 보이게 */
+#main-content {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
 
 
-
- 
+/* PC 이상에서 영상 크기 제한 (선택사항) */
+@media (min-width: 1024px) {
+  .splash-video {
+    max-width: 600px; /* 최대 해상도 제한 */
+    left: 50%;
+    transform: translateX(-50%); /* 가운데 정렬 */
+  }
+}
 
 @media (max-width: 600px) {
     h1 { font-size: 40px; }
    /* .countdown { font-size: 1.2em; } */
 }
+
+@media
