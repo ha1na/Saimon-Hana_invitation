@@ -787,6 +787,7 @@ iframe {
     height: 290px;
     padding: 73px 0;
   }
+  .section-dresscode p.ex01 {font-size: 14px;}
   .section-rsvp p {font-size: 16px;}
   .plan-three .schedule-text::before {
     width: 275px;
