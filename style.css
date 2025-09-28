@@ -479,6 +479,18 @@ iframe {
 }
 
 
+/* DRESS CODE */
+.section-dresscode h4 {
+  margin-bottom: 10px;
+}
+.section-dresscode p {
+  margin-top: 0;
+}
+.section-dresscode p.ex01 {
+  margin-top: 30px;
+}
+
+
 /* gallery */
 .section-gallery {
   text-align: center;
