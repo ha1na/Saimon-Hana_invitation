@@ -724,6 +724,7 @@ iframe {
   height: 100%;      /* 세로는 화면 꽉 채움 */
   object-fit: cover; /* 비율 유지하며 화면에 맞춤 */
   display: block;
+  transform: translate(0, -7%);
 }
 
 #splash-screen.hide {
